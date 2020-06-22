@@ -1,3 +1,9 @@
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -97,6 +103,11 @@ main span{
     color: #2c3e50;
 }
 
+.portfolio h2{
+    text-transform: uppercase;
+    font-weight: 600;
+} 
+
 
 .about span{
     font-size: 40px;
@@ -138,7 +149,7 @@ main .btn-group-lg > .btn, .btn-lg{
     width: 80%;
     padding: 20px;
     margin: 15px 0;
-    border-bottom: 1px solid #92929f;
+    border-bottom: 1px solid #e9ecef;
     font-size: 20px;
     text-align: start;
 }
@@ -236,10 +247,94 @@ main .btn-group-lg > .btn, .btn-lg{
 }
 
 
-@media screen and (min-width: 780px){
+@media screen and (min-width: 768px){
     .quadrato{
         width: 30%;
         float: left;
         margin-left: 10px;
     }
+
+    .avatar{
+        width: 200px;
+    }
+
+    .avatar img{
+        width: 100%;
+    }
+
+
+    
+}
+
+
+@media screen and (min-width: 992px){
+    
+    .avatar{
+        width: 250px;
+    }
+
+    .avatar img{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+
+    .line{
+        margin-bottom: 30px;
+    }
+
+    .line+h6{
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .quadrato{
+        width: calc(100% / 3);
+        padding: 10px 10px;
+        margin: auto;
+    }
+
+    .quadrato:first-child{
+        margin-top: 40px;
+    }
+
+    .quadrato:last-child{
+        padding-bottom: 40px;
+    }
+
+    .portfolio h2, #second,#third{
+        font-size: 42px;
+        padding-top: 30px;
+        text-transform: uppercase;
+    }
+
+    .text_about{
+        width: calc(100% / 2);
+        float: left;
+        padding: 20px;
+    }
+
+    #second+div{
+        width: 100%;
+    }
+
+    .about_click_button{
+        height: 400px;
+        position: relative;
+    }
+
+    .about_click_button > button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    form{
+        margin: auto;
+        width: 60%;
+    }
+
 }

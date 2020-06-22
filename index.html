@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Star Bootstrap</title>
      <!-- Link di Fontawesome -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
      <!-- Latest compiled and minified JavaScript -->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
      <!-- Latest compiled and minified CSS -->
@@ -23,8 +23,6 @@
              bottom: 0;
              z-index: 1;
          } 
-
-
      </style>
 </head>
 <body>
@@ -46,7 +44,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 text-center">
-                    <div class="avatar"><img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="avatar_img"></div>
+                    <div class="avatar">
+                        <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="avatar_img">
+                    </div>
                     <h1>Start Bootstrap</h1>
                     <div class="line"></div>
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -81,14 +81,22 @@
 
     <section class="container-fluid about">
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 text-center">
+            <div class="col-xs-10 col-md-offset-2 col-md-8 text-center">
                 <h2 id="second">About</h2>
-                <div class="line"></div>
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <div class="line"></div>
-                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-                <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
-                <button type="button" class="btn btn-default btn-lg">Free download</button>
+                <div>
+                    <div class="line"></div>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <div class="line"></div>
+                </div>
+                
+                <div class="text_about clearfix">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                </div>
+                <div class="text_about clearfix">
+                    <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
+                
+                <div class="about_click_button"><button type="button" class="btn btn-default btn-lg">Free download</button></div>
             </div>
         </div>
     </section>
@@ -106,7 +114,7 @@
                     <input type="text" placeholder="Phone number">
                     <input type="text" placeholder="Message">
                     <div class="click_button">
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default">Send</button>
                     </div>
                 </form>
             </div>
