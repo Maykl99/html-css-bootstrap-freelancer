@@ -12,30 +12,37 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <!-- MY CSS -->
      <link rel="stylesheet" href="css/style.css">
-
-     <style>
-         .fixed-navbar{
-             height: 100px;
-             position: fixed;
-             top: 0;
-             left: 0;
-             right: 0;
-             bottom: 0;
-             z-index: 1;
-         } 
-     </style>
+     <!-- Libreria jQuery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
     <nav class="container-fluid fixed-navbar">
         <section class="row heading">
-            <div class="col-xs-6">
-                <h5>Start Bootstrap</h5>
-            </div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Start Bootstrap</a>
+                  </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
 
-            <div class="col-xs-6 button">
-                <button>Menu</button>
-            </div>
         </section>
     </nav>
 
@@ -60,28 +67,75 @@
     <main class="container-fluid">
         <section class="container portfolio">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 text-center">
+                <div class="col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-10 text-center">
                     <h2 class="first">Portfolio</h2>
                     <div>
                         <div class="line"></div>
                         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                         <div class="line"></div>
                     </div>
-                    <div class="quadrato"> <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png" alt=""> </div>
-                    <div class="quadrato"> <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png" alt=""> </div>
-                    <div class="quadrato"> <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png" alt=""> </div>
-                    <div class="quadrato"> <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png" alt=""> </div>
-                    <div class="quadrato"> <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png" alt=""> </div>
-                    <div class="quadrato"> <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png" alt=""></div>
+                    <div class="quadrato">
+                        <div>
+                            <div class="overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png" alt="cabin_img">
+                        </div>  
+                    </div>
+
+                    <div class="quadrato"> 
+                        <div>
+                            <div class="overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png" alt="cake_img"> 
+                        </div>
+                    </div>
+
+                    <div class="quadrato"> 
+                        <div>
+                            <div class="overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png" alt="circus_img"> 
+                        </div>
+                    </div>
+
+                    <div class="quadrato"> 
+                        <div>
+                            <div class="overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png" alt="game_img"> 
+                        </div>
+                    </div>
+
+                    <div class="quadrato"> 
+                        <div>
+                            <div class="overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png" alt="safe_img"> 
+                        </div>
+                    </div>
+
+                    <div class="quadrato"> 
+                        <div>
+                            <div class="overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png" alt="submarine_img">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-
     <section class="container-fluid about">
         <div class="row">
-            <div class="col-xs-10 col-md-offset-2 col-md-8 text-center">
+            <div class="col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-10 text-center">
                 <h2 id="second">About</h2>
                 <div>
                     <div class="line"></div>
@@ -126,20 +180,27 @@
         <section class="container">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 text-center">
-                    <h2>Location</h2>
-                    <div>2215 John Daniel Drive</div>
-                    <div>Clark, MO 65243</div>
-                    <h3>Around the web</h3>
+                    <section class="location">
+                        <h2>Location</h2>
+                        <div>2215 John Daniel Drive</div>
+                        <div>Clark, MO 65243</div>
+                    </section>
+
                     <section class="social-icon">
+                        <h3>Around the web</h3>
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-linkedin-in"></i>
                         <i class="fab fa-github"></i>
                     </section>
-                    <h3>About Freelancer</h3>
-                    <div>Freelance is a free to use, MIT licensed Bootstrap theme created by
-                        <a>Start Bootstrap</a>.
-                    </div>
+
+                    <section class="free">
+                        <h3>About Freelancer</h3>
+                        <div>Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a>Start Bootstrap</a>.
+                        </div>
+                    </section>
+
                 </div>
             </div>
         </section>
@@ -149,7 +210,23 @@
 
 
 
-    
+   <script src="app/app.js"></script> 
     
 </body>
 </html>
+
+
+            <!-- <div class="col-xs-6">
+                <h5>Start Bootstrap</h5>
+            </div>
+
+            <div class="col-xs-6 button">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Menu</button>
+                <div id="demo" class="collapse">
+                    <ul>
+                        <li>Portfolio</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                  </div>
+            </div> -->
